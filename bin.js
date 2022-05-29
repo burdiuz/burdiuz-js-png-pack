@@ -176,8 +176,8 @@ export class PNGChunk {
   }
 
   setContent(value) {
-    if (this._content != value) {
-      this._content = value;
+    if (this.content != value) {
+      this.content = value;
       this.calculateCRC();
     }
   }
@@ -191,7 +191,7 @@ export class PNGChunk {
   }
 
   calculateCRC() {
-    if (!this._content) return 0;
+    if (!this.content) return 0;
 
     const bytes = new ByteArray(this.type.length + this.getContentLength());
 
