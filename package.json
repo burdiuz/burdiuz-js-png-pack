@@ -1,0 +1,22 @@
+{
+  "name": "js-png-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdiuz/js-png-pack.git"
+  },
+  "author": "",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/burdiuz/js-png-pack/issues"
+  },
+  "homepage": "https://github.com/burdiuz/js-png-pack#readme",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
+}
