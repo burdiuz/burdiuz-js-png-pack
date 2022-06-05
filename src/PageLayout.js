@@ -23,16 +23,7 @@ export class PageLayout extends Template {
       console.log(this.content);
     });
     */
-    this.appendContent("<h1>Content Start</h1>");
     this.loadContent("./src/PageLayout.template.html");
-    this.loadContent("./src/PageLayout.template2.html");
-    this.loadContent("./src/PageLayout.template3.html");
-    this.appendContent("<h1>In the middle</h1>");
-    this.loadContent("./src/PageLayout.template4.html");
-    this.loadContent("./src/PageLayout.template5.html");
-    this.appendContent("<h1>Content End</h1>");
-
-    console.log(this.children, this.content, this.root);
   }
 }
 

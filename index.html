@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <png-content></png-content>
-    <png-select></png-select>
-    <page-layout></page-layout>
+    <page-layout>
+      <png-select slot="image-area"></png-select>
+      <image-content slot="content-area"></image-content>
+    </page-layout>
   </body>
   <script type="application/typescript" src="./src/index.ts"></script>
   <script type="module" src="./index.js"></script>

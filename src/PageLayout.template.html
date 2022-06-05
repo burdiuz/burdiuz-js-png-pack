@@ -1,5 +1,12 @@
-<style></style>
-<div>
-  <div data-part="dropArea">#1 Top PNG Image section</div>
-  <div data-part="contents">Image Content section</div>
-</div>
+<style>
+  :host {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+  }
+</style>
+<slot name="image-area"></slot>
+<slot name="content-area"></slot>

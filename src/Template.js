@@ -65,13 +65,16 @@ export const appendContentTo = (target, contentStr, props) => {
 const ShadowRootSymbol = Symbol("Template.shadow-root");
 
 export class Template extends HTMLElement {
-  constructor(templateString = "", rootStyles = {}, shadowMode = "open") {
+  constructor(templateString = "", shadowMode = "open", rootStyles = null) {
     super();
+    this.content = {};
 
-    Object.assign(this.style, {
-      display: "block",
-      ...rootStyles,
-    });
+    if (rootStyles) {
+      Object.assign(this.style, {
+        display: "block",
+        ...rootStyles,
+      });
+    }
 
     if (shadowMode) {
       this[ShadowRootSymbol] = this.attachShadow({ mode: shadowMode });

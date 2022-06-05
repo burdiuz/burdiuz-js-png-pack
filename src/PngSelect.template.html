@@ -1,0 +1,30 @@
+<style>
+  :host {
+    position: relative;
+    flex: 1 0 auto;
+    border-color: #eee;
+    min-height: 300px;
+  }
+
+  *[data-part="container"].empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drop-area {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 5px;
+    background-color: #eee;
+    border: 1px dashed #000;
+  }
+</style>
+<div data-part="container" class="empty">
+  <input data-part="select" type="file" accept=".png,image/png" />
+  <div data-part="dropArea" class="drop-area" style="visibility: hidden;">Drop PNG image here...</div>
+</div>
