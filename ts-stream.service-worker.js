@@ -1,0 +1,1 @@
+importScripts('./ts-stream/index.js');
